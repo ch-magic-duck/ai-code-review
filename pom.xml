@@ -139,13 +139,13 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- GPG -->
+<!--            &lt;!&ndash; GPG &ndash;&gt;
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.6</version>
                 <configuration>
-                    <!-- 改成你自己的路径 -->
+                    &lt;!&ndash; 改成你自己的路径 &ndash;&gt;
                     <executable>D:\Program Files (x86)\GnuPG\bin\gpg.exe</executable>
                 </configuration>
                 <executions>
@@ -163,11 +163,11 @@
                 <version>0.4.0</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <!-- 这里的serverId是之前在本地settings.xml中配置的<server><id>标签值（上述三(1)步骤） -->
+                    &lt;!&ndash; 这里的serverId是之前在本地settings.xml中配置的<server><id>标签值（上述三(1)步骤） &ndash;&gt;
                     <publishingServerId>my-central-sonatype</publishingServerId>
                     <tokenAuth>true</tokenAuth>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 </project>
