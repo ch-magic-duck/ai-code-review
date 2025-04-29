@@ -1,0 +1,31 @@
+name: Run Java Git Diff By Local
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2  # 检出最后两个提交，以便可以比较 HEAD~1 和 HEAD
+
+      - name: Set up JDK 8
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin'  # 你可以选择其他发行版，如 'adopt' 或 'zulu'
+          java-version: '8'
+
+      - name: Run Java code
+        run: |
+          cd ai-code-review/src/main/java
+          javac cn/magicduck/ai/plus/sdk/OpenAiCodeReview.java
+          java cn.magicduck.ai.plus.sdkOpenAiCodeReview
