@@ -101,7 +101,7 @@
                     <archive>
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <mainClass>plus.gaga.middleware.sdk.OpenAiCodeReview</mainClass>
+                            <mainClass>io.github.chmagicduck.ai.plus.sdk.AiCodeReview</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
