@@ -28,4 +28,4 @@ jobs:
         run: |
           cd ai-code-review-sdk/src/main/java
           javac cn/magicduck/ai/plus/sdk/AiCodeReview.java
-          java cn.magicduck.ai.plus.sdk.OpenAiCodeReview
+          java cn.magicduck.ai.plus.sdk.AiCodeReview
