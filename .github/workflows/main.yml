@@ -26,6 +26,6 @@ jobs:
 
       - name: Run Java code
         run: |
-          cd ai-code-review/src/main/java
+          cd ai-code-review-sdk/src/main/java
           javac cn/magicduck/ai/plus/sdk/OpenAiCodeReview.java
           java cn.magicduck.ai.plus.sdkOpenAiCodeReview
