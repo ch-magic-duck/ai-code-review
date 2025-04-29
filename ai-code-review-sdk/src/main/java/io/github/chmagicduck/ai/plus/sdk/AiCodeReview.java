@@ -1,10 +1,11 @@
-package cn.magicduck.ai.plus.sdk;
+package io.github.chmagicduck.ai.plus.sdk;
 
-import cn.magicduck.ai.plus.sdk.domain.model.ChatCompletionRequest;
-import cn.magicduck.ai.plus.sdk.domain.model.ChatCompletionSyncResponse;
-import cn.magicduck.ai.plus.sdk.domain.model.Model;
-import cn.magicduck.ai.plus.sdk.utils.BearerTokenUtils;
+
 import com.alibaba.fastjson2.JSON;
+import io.github.chmagicduck.ai.plus.sdk.domain.model.ChatCompletionRequest;
+import io.github.chmagicduck.ai.plus.sdk.domain.model.ChatCompletionSyncResponse;
+import io.github.chmagicduck.ai.plus.sdk.domain.model.Model;
+import io.github.chmagicduck.ai.plus.sdk.utils.BearerTokenUtils;
 
 import java.io.BufferedReader;
 import java.io.File;

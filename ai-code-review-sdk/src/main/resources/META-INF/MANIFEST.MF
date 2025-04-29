@@ -1,2 +1,2 @@
 Manifest-Version: 1.0
-Main-Class: cn.magicduck.ai.plus.sdk.AiCodeReview
+Main-Class: io.github.ch-magic-duck.ai.plus.sdk.AiCodeReview

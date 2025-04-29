@@ -1,4 +1,5 @@
-package cn.magicduck.ai.plus.sdk.utils;
+package io.github.chmagicduck.ai.plus.sdk.utils;
+
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;

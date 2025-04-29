@@ -1,4 +1,5 @@
-package cn.magicduck.ai.plus.sdk.domain.model;
+package io.github.chmagicduck.ai.plus.sdk.domain.model;
+
 
 
 import java.util.List;

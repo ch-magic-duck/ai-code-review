@@ -28,7 +28,7 @@ jobs:
         run: mvn clean install
 
       - name: Copy ai-code-review-sdk JAR
-        run: mvn dependency:copy -Dartifact=cn.magicduck:ai-code-review-sdk:1.0 -DoutputDirectory=./libs
+        run: mvn dependency:copy -Dartifact=io.github.ch-magic-duck:ai-code-review-sdk:1.0 -DoutputDirectory=./libs
 
       - name: Run Code Review
         run: java -jar ./libs/ai-code-review-sdk-1.0.jar

@@ -1,8 +1,8 @@
-package cn.magic.ai.plus.sdk.test;
+package io.github.chmagicduck.ai.plus.sdk.test;
 
-import cn.magicduck.ai.plus.sdk.domain.model.ChatCompletionSyncResponse;
-import cn.magicduck.ai.plus.sdk.utils.BearerTokenUtils;
 import com.alibaba.fastjson2.JSON;
+import io.github.chmagicduck.ai.plus.sdk.domain.model.ChatCompletionSyncResponse;
+import io.github.chmagicduck.ai.plus.sdk.utils.BearerTokenUtils;
 import org.junit.Test;
 
 import java.io.BufferedReader;

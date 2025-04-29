@@ -1,4 +1,4 @@
-package cn.magicduck.ai.plus.sdk.domain.model;
+package io.github.chmagicduck.ai.plus.sdk.domain.model;
 
 public enum Model {
 

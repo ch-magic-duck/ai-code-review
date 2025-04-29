@@ -1,4 +1,4 @@
-package cn.magicduck;
+package io.github.chmagicduck;
 
 public class Application {
     public static void main(String[] args) {
