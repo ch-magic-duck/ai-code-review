@@ -1,4 +1,4 @@
-name: Build and Run AiCodeReview By Main Maven Jar
+name: Build and Run By Maven Jar
 
 on:
   push:
