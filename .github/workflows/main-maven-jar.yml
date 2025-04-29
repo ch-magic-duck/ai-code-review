@@ -1,4 +1,4 @@
-name: Run Java Git Diff By Local
+name: Build and Run AiCodeReview By Main Maven Jar
 
 on:
   push:
