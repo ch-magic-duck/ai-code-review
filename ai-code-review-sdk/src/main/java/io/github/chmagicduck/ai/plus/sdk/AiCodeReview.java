@@ -17,8 +17,8 @@ public class AiCodeReview {
 
     public static void main(String[] args) {
         GitCommand gitCommand = new GitCommand(
-                Env.get("GITHUB_TOKEN"),
                 Env.get("GITHUB_REVIEW_LOG_URI"),
+                Env.get("GITHUB_TOKEN"),
                 Env.get("COMMIT_PROJECT"),
                 Env.get("COMMIT_BRANCH"),
                 Env.get("COMMIT_AUTHOR"),
