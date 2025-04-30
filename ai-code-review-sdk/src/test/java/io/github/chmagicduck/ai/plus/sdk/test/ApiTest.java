@@ -2,6 +2,7 @@ package io.github.chmagicduck.ai.plus.sdk.test;
 
 import com.alibaba.fastjson2.JSON;
 import io.github.chmagicduck.ai.plus.sdk.domain.model.ChatCompletionSyncResponse;
+import io.github.chmagicduck.ai.plus.sdk.domain.model.WXWebhook;
 import io.github.chmagicduck.ai.plus.sdk.utils.BearerTokenUtils;
 import org.junit.Test;
 
@@ -12,6 +13,7 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
 
 public class ApiTest {
 
