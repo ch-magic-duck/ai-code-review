@@ -33,7 +33,7 @@ public class GitCommand {
 
     public String diff() throws IOException, InterruptedException {
         // git log -1 --pretty=format:%H
-        Process logProcess = new ProcessBuilder("git", "log", "-1", "--pretty=format:%H")
+        Process logProcess = new ProcessBuilder("git", "log", "origin/" + branch, "-1", "--pretty=format:%H")
                 .directory(new File("."))
                 .start();
 
