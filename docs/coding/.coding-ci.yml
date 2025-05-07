@@ -1,0 +1,32 @@
+.ai-code-review: &ai-code-review
+  - docker:
+      image: acicn/jdk-builder:8-240131-1443
+    stages:
+      - name: Build and Run AiCodeReview
+        env:
+          GITHUB_TOKEN: ${GITHUB_TOKEN}
+          GITHUB_REVIEW_LOG_URI: ${GITHUB_REVIEW_LOG_URI}
+          WECHAT_WEBHOOK_KEY: ${WECHAT_WEBHOOK_KEY}
+          CHATGLM_APIHOST: ${CHATGLM_APIHOST}
+          CHATGLM_APIKEYSECRET: ${CHATGLM_APIKEYSECRET}
+        script: |
+          mkdir -p ./libs
+
+          apt-get update && apt-get install -y wget git 
+
+          wget -O ./libs/ai-code-review-sdk-1.0.jar https://github.com/ch-magic-duck/ai-code-review/releases/download/v1.0/ai-code-review-sdk-1.0.jar
+
+          export COMMIT_PROJECT=$CODING_REPO_NAME
+          export COMMIT_BRANCH=$CODING_BRANCH
+          export COMMIT_AUTHOR=$CODING_COMMITTER
+          export COMMIT_MESSAGE=$CODING_COMMIT_MESSAGE_TITLE
+
+          echo "Repository name is ${REPO_NAME}"
+          echo "Branch name is ${BRANCH_NAME}"
+          echo "Commit author is ${COMMIT_AUTHOR}"
+          echo "Commit message is ${COMMIT_MESSAGE}"
+
+          java -jar ./libs/ai-code-review-sdk-1.0.jar
+
+master:
+  merge_request: *ai-code-review
